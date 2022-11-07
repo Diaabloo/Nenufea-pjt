@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="image/Groupe 136.png">
+    <title>Nenufea</title>
+</head>
+
+<body>
+
+<!--nav-bar-->
+<div class="container">
+<nav>
+    <!--bar-->
+<div class="nav-bar">
+
+<!--top-bar-->
+<div class="top-bar-inscription">
+    <div class="top-bar"></div>
+    <div class="top-bar"></div>
+    <div class="top-bar"> Vous souhaitez vendre sur Nenufea : <a href="#" style="color:black"> Inscrivez vous ici </a></div>
+    <div class="top-bar"><span class="headset"><i class="fa-solid fa-headset"></i> +33 6 60116853 </span></div>
+</div>
+
+<!--Nav-bar-->
+        <div class="nav-bar1">
+            <a href="#">
+                <img class="logo" src="image/Groupe 5.png" alt="logo">
+            </a>
+        
+        <ul class="nav-list" id="navi-list">
+            <li class="list-items"><a href="#">Maquillage</a></li>
+            <li class="list-items"><a href="#">Visage</a></li>
+            <li class="list-items"><a href="#">Corps</a></li>
+            <li class="list-items"><a href="#">Cheveux</a></li>
+            <li class="list-items"><a href="#">Hygiene</a></li>
+            <li class="list-items"><a href="#">Bien-être</a></li>
+            <li class="list-items"><a href="#">DIY</a></li>
+            <li class="list-items"><a href="#">Coffrets</a></li>
+            <li class="list-items"><a href="#">Artisants</a></li>
+        </ul>
+
+            <div  class="ellip" id="ellip"><a href="#"> <i class="fa-solid fa-user"></i></a></div>John Doe
+            <div  class="ellip1" id="ellip1"><a href="#"> <i class="fa-solid fa-heart"></i></a> </div>
+            <div  class="ellip2" id="ellip1"><a href="#"><i class="fa-solid fa-credit-card"></i></a> </div>
+        
+        <div class="menu" id="toggle-Button">
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+            <div class="menu-line"></div>
+        </div>
+
+    </div>
+
+   
+
+<script>
+    const toggleButton = document.getElementById('toggle-Button');
+    const navilist = document.getElementById('navi-list');
+    const ellip = document.getElementById('ellip');
+    const ellip1 = document.getElementById('ellip1');
+    
+    toggleButton.addEventListener('click', () => {
+        navilist.classList.toggle('active');
+    })
+</script>
+</div>
+</nav>
+</div>
+
+<!--Produit-->
+<div class="container">
+<div class="produit">
+
+    <!--Image-Produit-->
+    <div class="image">
+            <div class="premiere-image">
+                <img class="image1" src="image/pexels-mareefe-932577.png" name="slider" height="515" width="706">
+            </div>
+
+            <div class="slider">
+               
+                    <i id="prev" class="fa-solid fa-angle-left"></i>
+                
+
+                        <img onclick="slider.src =this.src" src="image/pexels-mareefe-932577.png" class="slide" width="101" height="74">
+                        <img onclick="slider.src =this.src" src="image/pexels-daria-shevtsova-1619488.png" class="slide" width="101" height="74">
+                        <img onclick="slider.src =this.src" src="image/pexels-pixabay-161599.png" class="slide" width="101" height="74">
+                        <img onclick="slider.src =this.src" src="image/pexels-mareefe-1188511.png" class="slide" width="101" height="74">
+                        <img onclick="slider.src =this.src" src="image/pexels-karolina-grabowska-4041392.png" class="slide" width="101" height="74">
+
+               
+                    <i id="next" class="fa-solid fa-angle-right"></i>
+                
+            </div>
+    </div>
+   
+    <!--content-Produit-->
+    <div class="content">
+      <div class="content-container">Huiles essenteilles </div>
+
+      <p class="huiles-pack">Pack Huiles Essenteilles</p>
+
+        <span class="badge bg-light text-dark" width="96px" height="23px">Produits naturels</span>
+        <span class="badge bg-light text-dark" width="36px" height="23px">Sains</span>
+        <span class="badge bg-light text-dark" width="27px" height="23px">Bio</span>
+        <span class="badge bg-light text-dark" width="42px" height="23px">Vegan</span>
+        <span class="badge bg-light text-dark" width="73px" height="23px">100% recyclé</span>
+
+
+       <div class="prix"> 
+        <div class="p96">96.00£</div> <del class="pro">120.00£</del><label class="promo">-20%</label>
+       </div>
+
+
+       <img  class="olive" src="image/Groupe 245.png">
+
+
+       <div class="base">
+           <p class="base-huile">Base d'huile</p>
+           <button class="btn-base-huile" width="46px" height="23px">Jasmin</button>
+           <button class="btn-base-huile" width="42px" height="23px">Crocus</button>
+           <button class="btn-base-huile" width="42px" height="23px">Dahlia</button>
+           <button class="btn-base-huile" width="59px" height="23px">Edelweiss</button>
+           <button class="btn-base-huile" width="52px" height="23px">Lavande</button>
+       </div>
+
+
+       <div class="origine">
+           <p class="para-ori">Origine</p>
+           <button class="btn-origine" width="100px" height="23px">Mandarine Rouge</button>
+           <button class="btn-origine" width="89px" height="23px">Menthe poivrée</button>
+           <button class="btn-origine" width="82px" height="23px">Lavande Aspic</button>
+           <button class="btn-origine" width="84px" height="23px">Sapin baumier</button>
+           <div>
+           <button class="btn-origine" width="119px" height="23px">Marjolaine à Coquilles</button>
+           </div>
+           </div>
+           
+           <div class="quantite">
+           <p class="quan-tite">Quantite</p>
+
+            <div> 
+            <input class="quantite-input" type="number" min="0" value="0"/>
+            <button class="btn-quantite" type="button">Ajouter Au Panier</button>
+            <i id="qtn-icon" class="fa-solid fa-heart"></i>
+           </div>
+           </div>
+
+           <div class="telecharger-btn">
+            <div></div>
+           <button class="telecharger" width="356" height="48"><i class="fa-solid fa-download"></i>    Télécharger les détails du produit</button>
+           <div></div>
+
+           </div>
+       </div>
+
+    </div>
+</div>
+
+<!--Composition-de-produits-->
+<div class="container">
+<div class="composition-container">
+    
+    <button class="btn">Composition</button>
+    <button class="btn2">Detail Produit</button>
+
+        <p class="paragraph1"> 
+        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed 
+        diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </p>
+        <p class="paragraph2"> 
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
+        </p>
+
+</div>
+</div>
+
+<!--produit-simulaire-->
+<div class="container">
+<div class="simulaire-container">
+    <div class="produit-simulaire"> Produits similaires </div>
+</div>
+</div>
+
+<!--Cards-->
+<div class="container">
+<div class="card-container">
+    <div class="card">
+        <img class="card-image" src="image/shampoing-comme-avant-14529518010462_1296x.png" alt="shampoing" width="337" height="250">
+        <div class="card-body">
+            <h2>Shampoing naturel</h2>
+            <h4>Huiles essenteilles</h4>
+            <h6>Olivia health</h6>
+            <h3>120.00 £</h3>
+            <span class="badge bg-light text-dark" width="96px" height="23px">Produits naturels</span>
+            <span class="badge bg-light text-dark" width="36px" height="23px">Sains</span>
+            <span class="badge bg-light text-dark" width="27px" height="23px">Bio</span>
+            <span class="badge bg-light text-dark" width="42px" height="23px">Vegan</span>
+            <span class="badge bg-light text-dark" width="73px" height="23px">+</span>
+    
+        </div>
+
+    </div>
+
+
+    <div class="card">
+        <img class="card-image" src="image/NoPath.png" alt="shampoing" width="337" height="250">
+        <div class="card-body">
+            <h2>Pack Huiles Essenteilles</h2>
+            <h4>Huiles essenteilles</h4>
+            <h6>Olivia health</h6>
+            <h3>120.00 £</h3>
+            <span class="badge bg-light text-dark" width="96px" height="23px">Produits naturels</span>
+            <span class="badge bg-light text-dark" width="36px" height="23px">Sains</span>
+            <span class="badge bg-light text-dark" width="27px" height="23px">Bio</span>
+            <span class="badge bg-light text-dark" width="42px" height="23px">Vegan</span>
+            <span class="badge bg-light text-dark" width="73px" height="23px">+</span>
+        </div>
+
+    </div>
+    <div class="card">
+        <img class="card-image" src="image/NoPath - Copy (4).png" alt="shampoing" width="337" height="250">
+        <div class="card-body">
+            <h2>Pack Huiles Essenteilles</h2>
+            <h4>Huiles essenteilles</h4>
+            <h6>Olivia health</h6>
+            <h3>120.00 £</h3>
+            <span class="badge bg-light text-dark" width="96px" height="23px">Produits naturels</span>
+            <span class="badge bg-light text-dark" width="36px" height="23px">Sains</span>
+            <span class="badge bg-light text-dark" width="27px" height="23px">Bio</span>
+            <span class="badge bg-light text-dark" width="42px" height="23px">Vegan</span>
+            <span class="badge bg-light text-dark" width="73px" height="23px">+</span>
+        </div>
+
+    </div>
+    <div class="card">
+        <img class="card-image" src="image/NoPath - Copy.png" alt="shampoing" width="337" height="250">
+        <div class="card-body">
+            <h2>Pack Huiles Essenteilles</h2>
+            <h4>Huiles essenteilles</h4>
+            <h6>Olivia health</h6>
+            <h3>120.00 £</h3>
+            <span class="badge bg-light text-dark" width="96px" height="23px">Produits naturels</span>
+            <span class="badge bg-light text-dark" width="36px" height="23px">Sains</span>
+            <span class="badge bg-light text-dark" width="27px" height="23px">Bio</span>
+            <span class="badge bg-light text-dark" width="42px" height="23px">Vegan</span>
+            <span class="badge bg-light text-dark" width="73px" height="23px">+</span>
+        </div>
+
+    </div>
+</div> 
+</div>
+
+
+<!--Service-->
+<div class="container">
+<div class="field1">
+<div class="service-container" width="1600" height="211">
+    <div class="icon-service">
+     <img src="image/Groupe de masques 14.png" alt="" class="img-icon">
+        <p class="p1">Paiement en ligne 100% sécurisé</p>
+        <p class="p2">Carte bancaire - Paypal </p>
+    </div>
+    
+    <div class="icon-service">
+        <img src="image/Groupe de masques 13.png" alt="" class="img-icon">
+        <p class="p1">Service client</p>
+        <p class="p2">+33 7 78 95 86 45 du lundi au vendredi</p>
+        <P class="p2">9h à 13h et de 14h à 17h </p>
+    </div>
+    
+    <div class="icon-service">
+        <img src="image/Groupe de masques 15.png" alt="" class="img-icon">
+        <p class="p1">Besoin d'un conseil ?</p>
+        <p class="p2">Contactez-nous par formulaire </p>
+    </div>
+    
+    <div class="icon-service">
+        <img src="image/Groupe de masques 16.png" alt="" class="img-icon">
+        <p class="p1">Produits naturels</p>
+        <p class="p2">Pour une consommation raisonnée et </p>
+        <P class="p2">écologique </p>
+    </div>
+
+</div>
+</div>
+</div>
+
+<!--abonnement-->
+<div class="container">
+    <div class="field2">
+    <div class="abonnement-container">
+
+        <div class="ab">Je m'abonne à la newsletter</div>
+
+        <div class="mail">
+            <div>
+            <input class="btn-mail" type="email" placeholder="Votre email">   
+            </div>
+            <div class="check">
+            <input class="checkbox" type="checkbox"name="check"> En cochant et validant, j'accepte de recevoir par mail les newsletters de Nenufea.
+            <br> 
+            Mes données seront traitées conformément à<a href="#"> la Politique de Gestion des Données</a> <br>Personnelles que j'ai lue et acceptée.    
+        </div>
+        </div>
+
+        <div><i id="i" class="fa-solid fa-paper-plane"></i></div>
+      
+        
+    </div>
+    </div>
+</div>
+</fieldset>
+
+<!--Text-->
+<fieldset class="field3">
+    <p class="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed sodales mauris, eget laoreet nisi. Aenean eu leo et orci iaculis gravida. 
+        <br>Proin nec quam quis quam convallis fermentum. Suspendisse id efficitur urna. Quisque pretium, orci a pretium sagittis, nisl libero consectetur mauris,
+        <br>vitae mollis tellus nulla non mi. Maecenas lectus risus, volutpat ut condimentum</p>
+</fieldset>
+
+<!--pied-page-->
+<fieldset class="field4">
+    <div class="description">
+       <div class="des-logo"><img src="image/Groupe 136.png"><p class="des-logo-para"> In eleifend risus id ex tincidunt<br> dapibus.Aenean velit risus, <br> imperdiet non varius</p> </div> 
+   
+
+    <div> 
+        <h2 class="premier">À propos</h2>
+        <ul class="inline-description">
+            <li class="list-inline-description"><a href="#">  Qui sommes nous </a></li>
+            <li class="list-inline-description"><a href="#"> CGU</a></li>
+            <li class="list-inline-description"><a href="#"> CGV</a></li>
+            <li class="list-inline-description"><a href="#"> Mentions légales</a></li>
+            <li class="list-inline-description"><a href="#"> Données personnelles</a></li>
+            <li class="list-inline-description"><a href="#"> Plan du site</a></li>
+        </ul>
+    </div>
+    <div>
+        <h2 class="premier">Commerçants</h2>
+        <ul class="inline-description">
+            <li class="list-inline-description"><a href="#">  Boutiques </a></li>
+            <li class="list-inline-description"><a href="#"> Catégories</a></li>
+            <li class="list-inline-description"><a href="#"> Produits</a></li>
+        </ul>
+
+      
+    </div>
+    <div> 
+        <h2 class="premier">Votre compte</h2>
+        <ul class="inline-description">
+            <li class="list-inline-description"><a href="#">  Livraison </a></li>
+            <li class="list-inline-description"><a href="#"> Commandes </a></li>
+            <li class="list-inline-description"><a href="#"> Informations personnelles </a></li>
+            <li class="list-inline-description"><a href="#"> Bons de réduction </a></li>
+
+        </ul>
+    </div>
+
+
+
+    <div> 
+        <h2 class="premier">Besoin d'aide ?</h2>
+        <ul class="inline-description">
+            <li class="list-inline-description"><a href="#">  FAQ </a></li>
+            <li class="list-inline-description"><a href="#"> Nous contacter </a></li>
+        </ul>
+    </div>
+</div>
+
+
+<footer class="footer-page">
+
+    <div class="copy">Copyright © 2020 - Nenufea</div>
+    <div>
+        <i class="fa-brands fa-facebook-square"></i>
+        <i class="fa-brands fa-twitter-square"></i>
+        <i class="fa-brands fa-instagram-square"></i>
+        <i class="fa-brands fa-youtube"></i>
+    </div>
+    <div>
+        <img src="image/Groupe 212.png">
+    </div>
+    <div>
+        <img src="image/Groupe 137.png">
+    </div>
+
+</footer>
+
+</fieldset>
+
+
+
+</body>
+
+</html>
